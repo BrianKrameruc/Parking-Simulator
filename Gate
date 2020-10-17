@@ -1,4 +1,5 @@
-  
+   //creates a gate a position x,y with label
+  //gate will close if the state is 0 
 class Gate {
   
   Gate(int xpos,int ypos, int state,String label){ // state = 0 is closed  state = 1 is open
