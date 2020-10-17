@@ -5,7 +5,8 @@ control_panel cp = new control_panel();
 int minute = 0;
 int raw_time = 0;
 int full = 0;
-
+Gate gate_north;
+Gate gate_south;
 void setup() {
   size(1200, 830);
   frameRate(30);
@@ -20,6 +21,8 @@ void draw() {
   current_date.time = minute/60;
   drawBackground();
   drawcars();
+  gate_north = new Gate(519,190,1);
+  gate_south = new Gate(519,690,1);
 }
 
 void drawBackground() {
